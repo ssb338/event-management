@@ -56,7 +56,7 @@ class TicketCreateViewTestCase(TestCase):
 
         data = {
             'event': event.id,
-            'user': self.user.id  # Provide the user ID
+            'user': self.user.id
         }
 
         response = self.client.post(self.url, data)
